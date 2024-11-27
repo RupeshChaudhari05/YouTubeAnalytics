@@ -70,11 +70,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'LAPTOP-873G27EA\SQLEXPRESS',//LAPTOP-873G27EA\SQLEXPRESS
-	'username' => '',
+	'hostname' => 'localhost',//LAPTOP-873G27EA\SQLEXPRESS
+	'username' => 'root',
 	'password' => '',
-	'database' => 'product',//rajkate
-	'dbdriver' => 'sqlsrv',//sqlsrv //mysqli
+	'database' => 'YouTubeanalytics',//rajkate
+	'dbdriver' => 'mysqli',//sqlsrv //mysqli
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

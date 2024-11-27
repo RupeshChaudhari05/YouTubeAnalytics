@@ -1,4 +1,3 @@
-  <?php include"include/header.php"; ?>
   <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
@@ -17,6 +16,9 @@
               <div class="col-auto ms-auto d-print-none">
                 <div class="btn-list">
                   <span class="d-none d-sm-inline">
+                      <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasEnd" role="button" aria-controls="offcanvasEnd">
+                        Toggle end offcanvas
+                      </a>
                     <a href="#" class="btn">
                       New view
                     </a>
@@ -35,6 +37,9 @@
             </div>
           </div>
         </div>
+
+<div class="hr-text">See also</div>
+
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
@@ -1481,6 +1486,23 @@
         </div>
       </div>
     </div>
+
+       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+              <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasEndLabel">End offcanvas</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda ea est, eum exercitationem fugiat illum itaque laboriosam magni necessitatibus, nemo nisi numquam quae reiciendis repellat sit soluta unde. Aut!
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas">
+                    Close offcanvas
+                  </button>
+                </div>
+              </div>
+            </div>
     <script>
       // @formatter:off
       document.addEventListener("DOMContentLoaded", function () {
@@ -2070,4 +2092,4 @@
       });
       // @formatter:on
     </script>
-    <?php include"include/footer.php"; ?>
+   
